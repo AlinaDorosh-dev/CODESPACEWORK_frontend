@@ -1,0 +1,319 @@
+.main-wrapper {
+    background-color: var(--light-green);
+    padding: 40px 15px;
+    width: 100vw;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+.main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1.25em;
+    font-family: 'Montserrat', sans-serif;
+}
+.header-table {
+    margin-bottom: 8.5em;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+.subtitle {
+    font-weight: 500;
+    font-size: 1em;
+    margin-top: 0;
+}
+
+/* Contenedor de la tabla */
+.job-listing-container {
+    background-color: white;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    margin-top: 3em;
+}
+
+.job-listing-container h4 {
+    font-size: 18px;
+    margin-bottom: 0.75em;
+}
+
+/* Filtro */
+.job-listing-container .filter {
+    min-width: 160px;
+    height: 45px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: var(--darkgrey);
+    background-color: #e5f0ed;
+    border: 1px solid #4a4a4a;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.job-listing-container .filter:focus {
+    outline: none;
+}
+
+.table-row-hidden {
+    display: none;
+}
+
+/* Tabla */
+.table {
+    width: 100%;
+    min-width: 849px;
+    overflow: hidden;
+    border-collapse: collapse;
+    margin-top: 3em;
+}
+.table-container {
+    margin: auto;
+    overflow-x: scroll;
+}
+
+.table thead {
+    background-color: #e5f0ed;
+    height: 4em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #e5f0ed;
+}
+
+/* Columnas */
+.table .th-title,
+.table .td-title {
+    width: 20%;
+}
+.table .th-applications,
+.table .td-applications {
+    width: 15%;
+}
+.table .th-created,
+.table .td-created {
+    width: 15%;
+}
+
+.table .th-action,
+.table .td-action {
+    width: 15%;
+}
+
+.th-title,
+.th-applications,
+.th-created,
+.th-status,
+.th-action {
+    text-align: left;
+    padding: 1.5em;
+    color: #47d7ac;
+}
+
+.td-title {
+    padding-bottom: 1em;
+}
+
+.td-title div {
+    padding: 0.5em 0;
+    margin-left: 1em;
+}
+
+.td-applications a {
+    text-decoration: none;
+    color: #000;
+}
+
+.td-applications a:hover {
+    color: #47d7ac;
+}
+
+.table .td-title .logo {
+    float: left;
+    width: 15%;
+    margin: 0.5em;
+}
+
+.table .td-title .logo img {
+    width: 3.2em;
+    height: 3.2em;
+}
+
+.table .td-title .job {
+    width: 50%;
+    padding-left: 4.5em;
+    /* display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: initial; */
+}
+
+.job h4 {
+    margin: 0;
+    text-align: justify;
+    font-size: 1em;
+}
+
+.table .td-action button {
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+    background-color: #e5f0ed;
+    border-radius: 25%;
+    border: none;
+    color: inherit;
+    font: inherit;
+    text-align: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 0.5em;
+    align-items: center;
+}
+
+.td-action button .icon {
+    color: #47d7ac;
+}
+.td-action button:hover .icon {
+    color: white;
+}
+.td-action button:hover {
+    background-color: #47d7ac;
+}
+
+.type,
+.location {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.job .icon {
+    width: 1.1em;
+    height: 1.1em;
+    flex: 0 0 auto;
+}
+
+.job span {
+    padding: 0 0 0.3em 0.4em;
+}
+
+.td-applications,
+.td-created,
+.td-status,
+.td-action {
+    padding: 1.5em;
+}
+
+/* Breakpoints */
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 1.75em;
+    }
+    .job-listing-container {
+        padding: 1.5em;
+    }
+
+    .job-listing-container div {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .job-listing-container h4 {
+        width: 50%;
+        float: left;
+        padding: 0.5em;
+    }
+
+    .job-listing-container .filter {
+        width: 12em;
+        height: 3.25em;
+        float: right;
+        background-position: right 28px;
+        appearance: none;
+        background-position: right 0.75rem center;
+    }
+
+    .select {
+        margin-left: 42.5em;
+        margin-top: 0.9em;
+    }
+
+    .table {
+        margin-top: 1.5em;
+    }
+
+    .table .td-title .logo {
+        width: 2%;
+    }
+
+    .table .td-title .job {
+        padding-left: 5.2em;
+    }
+
+    .type,
+    .location {
+        display: flex !important;
+    }
+
+    .job .icon {
+        width: 1.2em;
+        height: 1.2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .table .th-title,
+    .table .td-title {
+        width: 50%;
+    }
+
+    .table .td-title .job {
+        width: 70%;
+        padding-left: 3em !important;
+    }
+
+    .job h4 {
+        width: 100%;
+        text-align: left;
+        padding: 0;
+    }
+
+    .td-title div {
+        padding: 0.5em 0;
+        margin-left: 2em;
+        text-align: left;
+    }
+
+    .select-icon {
+        margin-left: 66em;
+    }
+}
+
+@media (min-width: 1270px) {
+    .table .th-title,
+    .table .td-title {
+        width: 20%;
+    }
+
+    .select-icon {
+        margin-left: 52em;
+    }
+
+    .table .td-title .job {
+        float: left;
+        width: 40%;
+        padding-left: 0.75em;
+    }
+}

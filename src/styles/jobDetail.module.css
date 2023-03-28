@@ -1,0 +1,66 @@
+section.job-detail-section {
+  display: block;
+  position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  /* height: calc(100vh - var(--header-height) - var(--footer-height)); */
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+section.job-detail-section div.upper-box {
+  display: flex;
+  position: relative;
+  background-color: var(--light-green);
+  background-size: cover;
+  padding: 5rem 1.5rem 1.5rem;
+}
+
+/* outer box */
+div.job-detail-outer {
+  position: relative;
+  padding: 15px;
+}
+
+.title-h3 {
+  padding-bottom: 1em;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark-green);
+}
+.description {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.description p{
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--darkgrey);
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  section.job-detail-section div.upper-box {
+    padding-bottom: 2em;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  .description {
+    width: 60%;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* Extra extra large devices (extra large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

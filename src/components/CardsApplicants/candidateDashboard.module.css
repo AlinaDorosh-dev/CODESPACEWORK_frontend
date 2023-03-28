@@ -1,0 +1,269 @@
+/*---------------CSS-------------------*/
+
+.DivCardsApp {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgb(64 79 104 / 5%);
+  margin-bottom: 30px;
+}
+.DivCardsApp > div {
+  padding: 40px 30px 0;
+  width: 100%;
+}
+.DivCardsApp > div > div {
+  margin-bottom: 40px;
+}
+.DivCardsApp > div > div > h3 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 41px;
+}
+.DivCardsApp > div > div > p {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.DivCardsApp > div > div + div {
+  background-color: var(--white);
+  padding-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgb(64 79 104 / 5%);
+  margin-bottom: 30px;
+}
+.DivCardsApp > div > div + div > div:first-of-type {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: transparent;
+  padding: 27px 30px 37px;
+  min-height: 60px;
+}
+.DivCardsApp > div > div + div > div:first-of-type > h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+.DivCardsApp > div > div:first-of-type > div {
+  margin: 40px 0 24px 0;
+}
+.DivCardsApp > div > div:first-of-type > div > button {
+  color: var(--dark-green);
+  background: rgba(25, 103, 210, 0.07);
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  position: relative;
+  font-size: 14px;
+  line-height: 25px;
+  padding: 10px 30px;
+  border-radius: 8px;
+}
+
+/*------------------CARDS--------------*/
+.DivCardsApp > div > div + div > div:last-of-type {
+  margin: 0 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.CardCand {
+  position: relative;
+  min-height: 34vh;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: row;
+  width: 48.5%;
+  border: 1px solid var(--light-green);
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.DivCardsApp > div > div:last-child > div > div > div {
+  margin-right: 10px;
+}
+.imgCardCand {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 14px;
+}
+.DivCardsApp > div > div:last-child > div > div > div + div {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 222px;
+}
+.DivCardsApp > div > div:last-child > div > div > div + div > div,
+.DivCardsApp > div > div:last-child > div > div > div + div > div > div {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.DivCardsApp > div > div:last-child > div > div > div + div > div {
+  color: dimgray;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+}
+.DivCardsApp > div > div:last-child > div > div > div + div > div:last-of-type {
+  position: relative;
+  padding: 0 0 10px 0;
+}
+.DivCardsApp > div > div:last-child > div > div > div + div > h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.DivCardsApp > div > div:last-child > div > div > div + div > div > div {
+  margin: 0 20px 10px 0;
+  height: auto;
+}
+.blueP {
+  color: var(--dark-green);
+}
+.DivCardsApp > div > div:last-child > div > div > div + div > div:nth-child(3) {
+  margin-bottom: 20px;
+}
+.DivCardsApp
+  > div
+  > div:last-child
+  > div
+  > div
+  > div
+  + div
+  > div:nth-child(3)
+  > p {
+  position: relative;
+  background: var(--light-green);
+  border-radius: 5rem;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 20px;
+  margin: 0 10px 2px 0;
+}
+.DivCardsApp
+  > div
+  > div:last-child
+  > div
+  > div
+  > div
+  + div
+  > div:nth-child(4)
+  > p {
+  position: relative;
+  background: var(--light-green);
+  border-radius: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.IconsCards {
+  margin-right: 5px;
+  height: 15px;
+  width: 15px;
+}
+.ButtonCardsCand {
+  position: relative;
+  display: block;
+  background: rgba(25, 103, 210, 0.07);
+  border-radius: 8px;
+  height: 15px;
+  width: 15px;
+  padding: 8px 10px;
+  color: var(--dark-green);
+  line-height: 30px;
+  text-align: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.ButtonCardsCand:hover {
+  background: var(--dark-green);
+  color: #fff;
+}
+
+/*------------------MEDIA---------------------*/
+@media (max-width: 1400px) {
+  .CardCand {
+    min-height: 27vh;
+  }
+  .DivCardsApp > div > div:first-of-type > div {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .CardCand {
+    min-height: 32vh;
+  }
+  .DivCardsApp > div > div:first-of-type > div {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .DivCardsApp > div > div:first-of-type > div {
+    display: none;
+  }
+  .CardCand {
+    padding: 10px;
+    min-height: 40vh;
+  }
+}
+@media (max-width: 768px) {
+  .DivCardsApp {
+    width: 100%;
+  }
+  .DivCardsApp > div > div:last-child > div > div > div + div {
+    width: 100%;
+  }
+  .CardCand {
+    width: 100%;
+    margin: 0 0 30px 0;
+    height: 100%;
+    min-height: 20vh;
+  }
+  .DivCardsApp > div > div + div {
+    padding: 0 0 40px 0;
+  }
+  .DivCardsApp > div > div:first-of-type > div {
+    display: inline;
+  }
+}
+
+@media (max-width: 576px) {
+  .DivCardsApp > div {
+    padding: 40px 15px 0;
+  }
+  .CardCand {
+    flex-direction: column;
+    padding: 20px 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 22vh;
+  }
+  .imgCardCand {
+    margin: 0 14px 0 0;
+  }
+  .DivCardsApp > div > div + div > div:last-of-type {
+    margin: 0 20px;
+  }
+  .DivCardsApp > div > div + div > div:first-of-type {
+    padding: 40px 20px;
+  }
+  .DivCardsApp > div > div:last-child > div > div > div:first-of-type {
+    margin-bottom: 20px;
+  }
+  .DivCardsApp > div > div > h3 {
+    font-size: 24px;
+    line-height: 1.3em;
+  }
+  .DivCardsApp > div > div:first-of-type > div {
+    display: inline;
+  }
+}

@@ -1,0 +1,71 @@
+.form-btn {
+  background-color: var(--green);
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  margin: 0.3rem auto;
+  transition: all 0.2s;
+}
+
+.form-btn:hover {
+  font-weight: 600;
+  box-shadow: 0 0 5pt 2pt #d3d3d3;
+}
+
+.disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+  padding: 0.9rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 100%;
+  margin: 0.3rem auto;
+}
+
+.cancel {
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 8px;
+  color: var(--white);
+  background: var(--lightgrey);
+  transition: 0.3s;
+  cursor: pointer;
+  display: block;
+  width: 40%;
+  text-align: center;
+  padding: 10px;
+}
+
+.cancel:hover {
+  background-color: #b5abab;
+  color: var(--dark-green);
+  font-weight: 500;
+  box-shadow: -2px -2px 5px 0px #3a3939bf;
+}
+
+.submit {
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 8px;
+  color: var(--white);
+  background: var(--dark-green);
+  transition: 0.3s;
+  cursor: pointer;
+  display: block;
+  width: 40%;
+  text-align: center;
+  padding: 10px;
+}
+
+.submit:hover {
+  background-color: #8ec9ca;
+  color: var(--dark-green);
+  font-weight: 500;
+  box-shadow: -2px -2px 5px 0px #3a3939bf;
+}

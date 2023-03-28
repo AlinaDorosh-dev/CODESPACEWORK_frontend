@@ -1,0 +1,9 @@
+.selector{
+    width: 100%;
+}
+
+
+.selector > div{
+    background-color: #f0f5f7;
+    padding: .25em;
+}

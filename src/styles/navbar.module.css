@@ -1,0 +1,286 @@
+/* Estilos Vallejo */
+.btn {
+  display: none;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.header-container {
+  background-color: var(--green);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos Naiara */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+  width: 120px;
+  z-index: 3000;
+}
+.navbar {
+  background-color: var(--green);
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* menu hamburguesa */
+.menu-bars {
+  display: flex;
+  margin-left: 10rem;
+  font-size: 1rem;
+  background: none;
+  justify-content: left;
+  padding-right: 6%;
+  color: var(--black);
+}
+
+nav > ul > li > a.menu-bars {
+  color: black;
+  position: relative;
+  left: 65%;
+  font-size: 1.8rem;
+}
+.menu-bars > {
+  color: black;
+}
+.menu-bars svg{
+  font-size: 1.7rem;
+}
+
+.nav-menu {
+  background-color: #e5f0ed;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  z-index: 9;
+  height: calc(100vh - var(--footer-height));
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: var(--dark-green);
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-menu-items {
+  width: 100%;
+  padding: 0;
+}
+
+.navbar-toggle {
+  background-color: #e5f0ed;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.title {
+  margin-left: 16px;
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .navbar {
+    padding: 0 5%;
+    justify-content: space-evely;
+  }
+  .nav-menu {
+    width: 400px;
+    left: 100;
+  }
+  .nav-menu.active {
+    left: 0;
+    transition: 350ms;
+  }
+  .logo {
+    width: 150px;
+  }
+  .menu-bars {
+    font-size: 1.8rem;
+    margin-left: 19rem;
+  }
+  .nav-text a {
+    font-size: 1.8rem;
+    margin: 2px;
+  }
+
+  .menu-bars svg{
+    font-size: 2rem;
+    margin-left: 10rem;
+  }
+  /* .nav-text:first-child {
+    margin-top: 100px;
+    border: 1px solid red;
+  } */
+  .nav-text1 {
+    font-size: 1.8rem;
+    margin: 2px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .nav-menu {
+    background-color: var(--green);
+    display: flex;
+    width: 60%;
+    height: var(--header-height);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: 850ms;
+    z-index: 9;
+  }
+  .title {
+    margin-left: 0;
+    width: fit-content;
+  }
+
+  .navbar {
+    display: none;
+  }
+  .nav-text1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66%;
+  }
+  .nav-menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* gap: 1rem; */
+    /* width: 90%; */
+  }
+  .navbar-toggle {
+    display: none;
+  }
+  .nav-text {
+    display: inline-block;
+    list-style: none;
+    /* height: 60px; */
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-text a {
+    z-index: 3000;
+    color: var(--darkgrey);
+    font-weight: 600;
+    align-self: center;
+    padding: 0;
+    display: inline-block;
+    margin-top: 1.2rem;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* Extra extra large devices (extra large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
+/* Estilos Vallejo */
+@media (min-width: 820px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .btn {
+    display: none;
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1280px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .btns {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+  .btn {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: var(--white);
+    background: var(--dark-green);
+    white-space: nowrap;
+    transition: 0.3s;
+    cursor: pointer;
+    display: block;
+  }
+  .btn:hover {
+    background-color: #8ec9ca;
+    color: var(--dark-green);
+    font-weight: 500;
+    box-shadow: -2px -2px 5px 0px #3a3939bf;
+  }
+  .icon {
+    display: none;
+  }
+ 
+}
+@media (min-width: 1400px) {
+.nav-menu{
+  width: 65%;
+}
+.nav-text {
+  justify-content: flex-end;
+}
+}

@@ -1,0 +1,41 @@
+.form-input {
+  background-color: #fff;
+  color: var(--darkgrey);
+  border: none;
+  padding: 0.9rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: 100%;
+  margin: 0 auto 1.5rem auto;
+}
+.form-input:focus {
+  border: 1px solid #47d7ac;
+  box-shadow: 0 0 5pt 2pt #d3d3d3;
+}
+
+.password-visiblity-icon {
+  position: absolute;
+  padding: 0.7rem;
+  right: 2.5rem;
+  color: var(--darkgrey);
+  cursor: pointer;
+}
+
+.forgot-password {
+  background-color: var(--light-green);
+  color: var(--darkgrey);
+  border: none;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  width: 80%;
+  margin: 1.5rem auto 3rem auto;
+  display: block  ;
+  font-size: 1.5rem;
+}
+
+.forgot-password:focus {
+  border: 1px solid #47d7ac;
+  box-shadow: 0 0 5pt 2pt #d3d3d3;
+}

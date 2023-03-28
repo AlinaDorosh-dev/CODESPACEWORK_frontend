@@ -1,0 +1,65 @@
+.form-select {
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+  line-height: 25px;
+  padding: 10px 44px 10px 22px;
+  color: var(--primary-color);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-color: #f0f5f7;
+  color: dimgray;
+  cursor: pointer;
+
+  /* height: 45px; */
+  /* font-size: 14px; */
+}
+
+/* Small devices (landscape phones, 576px and up)   */
+@media (min-width: 576px) {
+  /* here your code   */
+}
+
+/* Medium devices (tablets, 768px and up)   */
+@media (min-width: 768px) {
+  .switcher {
+    flex-direction: row;
+  }
+  .sort-by {
+    flex-wrap: nowrap;
+  }
+  .switcher .sort-by .form-select {
+    margin-left: 10px;
+    margin-right: 12px;
+  }
+}
+
+/* Large devices (desktops, 992px and up)   */
+@media (min-width: 992px) {
+  .switcher .sort-by .form-select {
+    width: auto;
+  }
+  .switcher .sort-by {
+    justify-content: flex-end;
+  }
+  .form-select {
+    width: 50%;
+    margin-left: 30px;
+    padding: 12px 44px 12px 22px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up)   */
+@media (min-width: 1200px) {
+  /* here your code   */
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)   */
+@media (min-width: 1400px) {
+  /* here your code  */
+}

@@ -1,0 +1,34 @@
+.jobs-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 50px 1rem 0;
+    background-color: var(--light-green);
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px, var(--gree);
+    width: 25%;
+    border-radius: 0.375rem;
+    font-weight: bolder;
+}
+
+.detalle-oferta{
+    padding: 1rem;
+    font-weight: normal ;
+}
+
+.detalle-oferta .icon{
+    margin-right: 1rem;
+}
+
+.button-empresa{
+    background-color: var(--dark-green);
+    color: var(--white);
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,358 @@
+/** @fileoverview Home page styles. 
+@author: Alina Dorosh
+ */
+
+.main-home {
+  color: #4f4f4f;
+  position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  height: calc(100vh - var(--header-height) - var(--footer-height));
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  background: linear-gradient(145deg, var(--light-green) 0%, #fcfcfd 80%);
+  overflow: hidden;
+}
+
+.main-home .main-container {
+  position: static;
+  margin: 0 auto;
+  display: flex;
+}
+.main-home .content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+}
+.main-home .figure-image img {
+  height: 200px;
+  border-radius: 5px;
+}
+.main-home .image-one-box img {
+  height: 350px;
+}
+.main-home .images-container {
+  display: none;
+}
+.main-home .images-box {
+  margin-top: 3rem;
+  position: relative;
+  display: block;
+  padding-left: 100px;
+}
+.main-home .images-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.main-home .image-one-box,
+.main-home .image-two-three-box {
+  width: 50%;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+.main-home .image-two-three-box img {
+  margin: 15px 0;
+  z-index: 0;
+}
+.main-home .notification {
+  position: absolute;
+  top: -30px;
+  left: -60px;
+  width: 210px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.6rem;
+  border-radius: 5px;
+  background: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 100;
+}
+.main-home .icon {
+  font-size: 36px;
+  display: block;
+}
+.main-home .icon-bg {
+  color: #fef2de;
+}
+.main-home .icon-color {
+  color: #f9ab00;
+}
+.main-home .notification p {
+  display: block;
+  line-height: 1.4;
+}
+.main-home .apear {
+  animation-name: apear;
+  animation-duration: 1s;
+}
+
+.main-home .hide {
+  display: none;
+}
+
+.main-home .candidates {
+  position: absolute;
+  padding: 1rem;
+  z-index: 2;
+  right: 150px;
+  bottom: 40px;
+  background-color: #fff;
+  width: 180px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 5px;
+  width: 200px;
+}
+.main-home .candidates img {
+  height: 35px;
+}
+
+.main-home .opaque {
+  opacity: 0;
+}
+@keyframes apear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-210px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-140px);
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-40px);
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+.main-home .text {
+  padding: 1.5rem;
+  width: 100%;
+  margin: 1rem auto;
+  font-size: 2.5rem;
+  text-align: center;
+
+}
+.main-home .text .icon-location {
+  color: var(--green);
+  margin-right: 0.5rem;
+  font-size: 30px;
+}
+
+.main-home .typing-box {
+  background-color: var(--white);
+  padding: 1.5rem 1rem;
+  font-size: 20px;
+  width: 100%;
+  margin: 2rem auto;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.main-home .typing-box svg {
+  margin-right: 0.5rem;
+}
+
+.main-home .info-box {
+  text-align: center;
+  font-size: 1.8rem;
+
+  background-color: var(--green);
+  border-radius: 5px;
+  width: 60%;
+  margin: 1.5rem auto 0.5rem auto;
+  padding: 1rem;
+}
+
+.main-home .number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .main-home .main-container {
+    flex-direction: column;
+  }
+  .main-home .content-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 3rem 0 3rem;
+  }
+  .main-home .text {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .main-home .images-container {
+    display: block;
+    padding: 0 3rem;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 410px;
+    transform: translate(25%);
+  }
+
+  .main-home .typing-box {
+    width: 80%;
+  }
+  .main-home .info-box {
+    width: 80%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .main-home .main-container {
+    flex-direction: row;
+  }
+  .main-home .content-container {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    margin-top: none;
+  }
+  .main-home .images-container {
+    display: block;
+    width: 50%;
+    max-width: 600px;
+    position: absolute;
+    top: 20px;
+    right: 120px;
+  }
+  .main-home .text {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .main-home .typing-box {
+    width: 80%;
+    text-align: left;
+  }
+  .main-home .info-box {
+    margin: 2rem auto;
+  }
+  .main-home .candidates {
+    right: 110px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .main-home .main-container {
+    flex-direction: row;
+  }
+  .main-home .content-container {
+    width: 55%;
+    position: absolute;
+    top: 0;
+  }
+  .main-home .images-container {
+    display: block;
+    width: 45%;
+    max-width: 600px;
+    position: absolute;
+    top: 60px;
+    right: 120px;
+  }
+  .main-home .text {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .typing-box {
+    width: 80%;
+    text-align: left;
+  }
+  .main-home .info-box {
+    margin: 2rem auto;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .main-home .content-container {
+    position: absolute;
+    top: 80px;
+  }
+
+  .main-home .images-container {
+    position: absolute;
+    top: 80px;
+    right: 250px;
+  }
+
+  .main-home .figure-image img {
+    height: 300px;
+  }
+  .main-home .image-one-box img {
+    height: 450px;
+  }
+
+  .main-home .candidates {
+    width: 250px;
+  }
+
+  .main-home .notification {
+    width: 250px;
+  }
+  .main-home .candidates img {
+    height: 50px;
+  }
+
+  .main-home .images-box {
+    padding-left: 0;
+  }
+}

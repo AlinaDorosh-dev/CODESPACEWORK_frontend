@@ -1,0 +1,120 @@
+.job-container {
+    width: 100%;
+    padding: 50px 30px 0;
+    background-color: var(--light-green);
+    min-height: calc(100vh - (var(--footer-height)) - var(--header-height));
+}
+.switcher {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 7em; /* Necesario para el boton del menu navegación */
+}
+.showing-result {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.sort-by {
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.sort-by .form-select {
+    position: relative;
+    height: 45px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: dimgray;
+    line-height: 25px;
+    background-color: #f0f5f7;
+    margin-bottom: 15px;
+}
+.content-btn {
+    width: 100%;
+}
+.btn-clear {
+    width: 100%;
+    background-color: #dc3545;
+    border: 1px solid #ced4da;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 10px 54px 10px 54px;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.btn-clear-disabled {
+    visibility: hidden;
+}
+
+/* Small devices (landscape phones, 576px and up)   */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up)   */
+@media (min-width: 768px) {
+    .switcher {
+        display: flex;
+        padding: 12px;
+        width: 100%;
+        align-items: flex-end;
+    }
+    .sort-by {
+        width: 50%;
+        padding-left: 12px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)   */
+@media (min-width: 992px) {
+    .job-container {
+        display: block;
+    }
+    .sort-by {
+        flex-wrap: nowrap;
+    }
+    .sort-by {
+        padding: 0;
+        width: 65%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-clear {
+        margin-bottom: 0;
+        line-height: 20px;
+        width: 50%;
+        cursor: pointer;
+    }
+
+    .btn-clear-disabled {
+        width: calc(50% - 24px);
+        margin: 0 1.3em 0 0.5em;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up)   */
+@media (min-width: 1200px) {
+    .sort-by {
+        width: 49%;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)   */
+@media (min-width: 1400px) {
+    /* here your code  */
+}

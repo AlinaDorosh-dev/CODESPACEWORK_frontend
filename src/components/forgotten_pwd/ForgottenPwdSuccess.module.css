@@ -1,0 +1,15 @@
+.md-content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.md-content-container h3, .md-content-container p{
+    margin-bottom: 30px;
+}

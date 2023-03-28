@@ -1,0 +1,72 @@
+.modal {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+}
+
+.modal-show {
+  visibility: visible;
+}
+
+.modal-dialog {
+  position: absolute;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.modal-error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.modal-confirmation {
+  background-color: #d1e7dd;
+  color: #146c43;
+}
+
+.modal-body {
+  padding: 1em 1.5em 0.5em 1.5em;
+  flex-grow: 1;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.btn {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 0.2em 1em;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  color: #212529;
+  background-color: #f8f9fa;
+  border: 1px solid #212529;
+}
+
+.btn:hover {
+  background-color: #bfc2c4;
+  border-color: #bfc2c4;
+}

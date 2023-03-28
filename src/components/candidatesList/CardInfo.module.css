@@ -1,0 +1,52 @@
+/*Card Info*/
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: default;
+}
+
+/*container for candidate name and role*/
+.info-name-role {
+  min-height: 60px;
+}
+
+.info-name {
+  font-size: 16px;
+  color: #202124;
+  line-height: 24px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+/*candidate carrer*/
+.info-role {
+  display: block;
+  font-size: 14px;
+  color: var(--dark-green);
+  line-height: 20px;
+  margin-bottom: 9px;
+}
+
+/*link to candidate profile*/
+.view-profile {
+  width: 100%;
+  text-align: center;
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 0.375em;
+  padding: 18px 35px 15px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+
+}
+.view-profile:hover{
+  background-color: var(--light-green);
+  color: var(--white);
+  border: 1px solid var(--green);
+}

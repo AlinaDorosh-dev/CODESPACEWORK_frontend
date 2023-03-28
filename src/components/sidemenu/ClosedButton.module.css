@@ -1,0 +1,22 @@
+.button-styles {
+    background-color: var(--lightgreen);
+    font-size: 2em;
+    margin-left: 25rem;
+    margin-top: 1rem;
+    color: var(--grey);
+}
+@media (max-width: 821px) {
+    .prueba {
+        width: 60%;
+        position: absolute;
+        z-index: 300;
+    }
+}
+
+@media (min-width: 992px) {
+    .prueba {
+        width: 60%;
+        position: absolute;
+        z-index: 300;
+    }
+}

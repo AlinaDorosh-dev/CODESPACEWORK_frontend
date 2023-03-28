@@ -1,0 +1,172 @@
+.register-form h5 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  line-height: 1.3rem;
+}
+.register-form .roles {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+ 
+}
+.register-form .role-btn {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--darkgrey);
+  width: 45%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.register-form .active-role {
+  background-color: var(--green);
+  color: #fff;
+  border: none;
+}
+.register-form .not-active-role:hover {
+  background-color: #fff;
+  color: var(--dark-green);
+  border: 1px solid var(--dark-green);
+}
+
+.register-form label {
+  font-size: 0.8rem;
+  padding: 0;
+  text-align: left;
+ }
+
+.register-form .instructions {
+  font-size: 0.6rem;
+  border-radius: 0.3rem;
+  background: var(--darkgrey);
+  color: #fff;
+  padding: 0.3rem;
+  width: 100%;
+  margin: -.5rem auto .4rem auto;
+  display: block;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.register-form .instructions > svg {
+  margin-right: 0.5rem;
+}
+
+.register-form .offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.register-form .alert-green {
+  background-color: var(--valid);
+  border-radius: 0.3rem;
+  color: rgb(41, 39, 39);
+  padding: 0.25rem;
+  width: 100%;
+  margin: 1rem auto;
+  display: block;
+  font-weight: 300;
+  font-size: .7rem;
+  color: #fff;
+}
+
+.register-form .hide {
+  display: none;
+}
+
+.register-form .valid {
+  color: var(--valid);
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.register-form .invalid {
+  color: var(--invalid);
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.register-form .errmsg {
+  background-color: rgb(207, 60, 60);
+  border-radius: 0.3rem;
+  color: rgb(41, 39, 39);
+  padding: 0.25rem;
+  width: 100%;
+  margin: 1rem auto;
+  display: block;
+  font-weight: 300;
+  font-size: .7rem;
+  color: #fff;
+}
+.register-form .have-account{
+  font-size: 0.8rem;
+  padding: 0.3rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+}
+.register-form .login{
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--lightgrey);
+  cursor: pointer;
+}
+
+.register-form .login:hover{
+  color: var(--green);
+}
+
+@media (min-width: 992px) {
+.register-form{
+  font-size: 1.5rem;
+}
+  
+  .register-form  h5{
+   font-size: 1.3rem;
+   line-height: 1.8rem;
+  }
+
+  .register-form .role-btn{
+    font-size: 1.2rem;
+    margin-top: 1rem ;
+    margin-bottom: 1rem;
+  }
+
+  .register-form label {
+    font-size: 1.1rem;
+  }
+
+  .register-form input{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+
+  .register-form button{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    padding: 1.1rem;
+  }
+
+  .register-form .have-account{
+    font-size: 1rem;
+   
+  }
+  .register-form .login{
+    font-size: 1.2rem;
+   
+  }
+
+
+
+  .register-form .instructions {
+    font-size: 1rem;
+  }
+  
+}

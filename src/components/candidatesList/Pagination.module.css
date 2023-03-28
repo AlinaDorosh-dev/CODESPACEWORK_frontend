@@ -1,0 +1,71 @@
+/*** Pagination ***/
+
+.pagination-container {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--light-green);
+  align-items: center;
+  padding: 15px 10px 15px;
+}
+
+/*spacer to numbers between last and first number range*/
+.dots {
+  color: var(--dark-green);
+}
+
+.number-container {
+  font-size: 15px;
+  line-height: 40px;
+  min-width: 40px;
+  text-align: center;
+}
+
+.number {
+  cursor: pointer;
+  display: block;
+  color: var(--green);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.number:hover {
+  background: var(--dark-green);
+  color: var(--white);
+}
+
+.number-active {
+  display: block;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  background: var(--green);
+  color: var(--white);
+}
+
+/* Arrows left and right */
+.prev,
+.next {
+  font-size: 15px;
+  line-height: 40px;
+  color: var(--green);
+  cursor: pointer;
+}
+
+.prev:hover,
+.next:hover {
+  background: var(--dark-green);
+  color: var(--white);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.prev-hidden,
+.next-hidden {
+  visibility: hidden;
+}

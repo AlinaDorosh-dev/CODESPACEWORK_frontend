@@ -1,0 +1,240 @@
+.container{
+  display: block;
+  position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  /* height: calc(100vh - var(--header-height) - var(--footer-height)); */
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+.col-lg-4 {
+  width: 30%;
+}
+
+.content {
+  width: 80%;
+  padding: 3%;
+  margin-bottom: 40px;
+}
+
+.jobs-information {
+  background: #f5f7fc;
+  position: relative;
+  list-style: none;
+  display: block;
+  padding: 3em;
+  padding-top: 2em;
+  border-radius: 0.6em;
+  padding-bottom: 0;
+}
+.jobs-information li {
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--dark-green);
+  padding: 1.5em;
+}
+.jobs-information li:last-child {
+  border-bottom: none;
+}
+
+.jobs-information .icons-job {
+  margin-right: 20px;
+  color: var(--dark-green);
+  position: absolute;
+  overflow: visible;
+  box-sizing: content-box;
+  height: 30px;
+  width: 30px;
+}
+.jobs-information h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #202124;
+  position: relative;
+  margin-left: 45px;
+}
+.jobs-information span,
+.jobs-information a {
+  font-size: 15px;
+  line-height: 20px;
+  color: #474842;
+  margin-left: 45px;
+}
+.jobs-information a {
+  text-decoration: none;
+  color: var(--dark-green);
+}
+.col-lg-8 {
+  width: 60%;
+}
+.content-employer {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.content-employer div:first-of-type {
+  padding: 3%;
+  background: #f5f7fc;
+
+  padding-bottom: 2em;
+}
+.img-employer {
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.name-employer {
+  margin-top: 15px;
+
+  position: relative;
+  display: block;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  color: #202124;
+  margin-bottom: 15px;
+}
+.info-employer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+.job {
+  display: block;
+  font-size: 14px;
+  color: var(--dark-green);
+  line-height: 19px;
+  padding-left: 0;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+.date {
+  position: relative;
+  font-size: 14px;
+  line-height: 22px;
+  color: dimgray;
+  font-weight: 400;
+}
+.icon-fa-clock {
+  background-color: white;
+  color: dimgray;
+  font-size: 20px;
+  margin-right: 10px;
+  background: #f5f7fc;
+}
+.description {
+  margin-top: 4em;
+  position: relative;
+  font-size: 15px;
+  line-height: 26px;
+  color: dimgray;
+  margin-bottom: 2em;
+  display: block;
+  padding: 3%;
+}
+.description h4 {
+  color: #202124;
+}
+.description p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.description p {
+  margin-top: 30px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 390px) {
+  .col-lg-4 {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
+  .col-lg-8 {
+    width: 100%;
+  }
+  .description p {
+    margin-top: 15px;
+  }
+
+  .img-employer {
+    position: inherit;
+  }
+  .name-employer,
+  .info-employer {
+    margin-left: 0px;
+  }
+  .info-employer .job {
+    margin-right: 0px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 820px) {
+  
+  .col-lg-4 {
+    width: 100%;
+    margin-top: 4em;
+  }
+
+  .content {
+    width: 100%;
+  }
+  .col-lg-8 {
+    width: 100%;
+  }
+  .description p {
+    margin-top: 30px;
+  }
+  /* .info-employer {
+    display: flex;
+    flex-direction: row;
+  } */
+  .info-employer .date {
+    margin-bottom: 1em;
+  }
+}
+/* X-Large devices (large desktops, 1024px and up)   */
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .col-lg-4 {
+    width: 100%;
+    padding: 1%;
+  }
+
+  .content {
+    width: 100%;
+  }
+  .col-lg-8 {
+    width: 100%;
+  }
+  .description p {
+    margin-top: 30px;
+  }
+  .content-employer div:first-of-type {
+    margin-top: 3em;
+    background: white;
+  }
+  .icon-fa-clock {
+    background-color: white;
+  }
+}

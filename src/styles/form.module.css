@@ -1,0 +1,397 @@
+/* PERSONAL STYLES */
+.page-wrapper {
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	width: 100%;
+	min-width: 300px;
+	overflow: hidden;
+	background-color: var(--light-green);
+	transition: all 0.3s ease;
+}
+
+.dashboard {
+	position: relative;
+	padding: 40px 15px 0;
+	background-color: var(--light-green);
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.dash-title {
+	position: relative;
+	/* margin-bottom: 40px; */
+	line-height: 1.3em;
+	margin-bottom: 8em;
+}
+.dash-title h3 {
+	margin-bottom: 10px;
+	line-height: 1.3em;
+	font-size: 24px;
+	font-weight: 600;
+	color: #202124;
+}
+.dash-title p {
+	font-size: 14px;
+	color: dimgray;
+	line-height: 24px;
+	font-weight: 400;
+	margin: 0;
+}
+
+/* TODO: eliminar  clase .show-1023 al terminar */
+.mb-4 {
+	margin-bottom: 1.5rem !important;
+}
+.ms-0 {
+	margin-left: 0 !important;
+}
+.show-1023 {
+	display: block;
+	order: 2;
+	margin-left: 20px;
+	margin-right: 0;
+	margin-bottom: 15px;
+}
+/* ------------------- */
+
+/* Form Container (Outer) */
+.container {
+	position: relative;
+	background: var(--white);
+	border-radius: 8px;
+	box-shadow: 0 6px 15px rgba(98, 98, 98, 0.244, 5%);
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: calc(-1 * var(--y-size));
+	margin-right: calc(-0.5 * var(--x-size));
+	margin-left: calc(-0.5 * var(--x-size));
+}
+.row > * {
+	width: 100%;
+	max-width: 100%;
+	padding-right: calc(var(--x-size) * 0.5);
+	padding-left: calc(var(--x-size) * 0.5);
+	margin-top: var(--y-size);
+}
+.container-title {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: space-between;
+	background: transparent;
+	min-height: 60px;
+	padding: 20px;
+}
+.container-title h4 {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 500;
+	padding: 7px 0;
+}
+.container-content {
+	position: relative;
+	padding: 0 20px 10px;
+}
+
+/* Forms Style */
+.input-container > .form-label {
+	font-size: 15px;
+	line-height: 20px;
+	color: var(--darkgrey);
+	font-weight: 500;
+}
+.form-control {
+	position: relative;
+	width: 100%;
+	display: block;
+	height: 60px;
+	line-height: 30px;
+	padding: 15px 20px;
+	font-size: 15px;
+	color: var(--dark-green);
+	background-color: var(--light-green);
+	border: 1px solid #f0f5f7;
+	box-sizing: border-box;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	margin-top: 10px;
+}
+.form-control:hover,
+.form-control:focus {
+	border: var(--green) 1.5px solid;
+}
+.text-area_control:hover,
+.text-area_control:focus {
+	border: var(--green) 1.5px solid;
+}
+.text-danger {
+	color: var(--invalid);
+}
+.form-control.invalid,
+.form-control.invalid:focus {
+	border: var(--invalid) 1px solid !important;
+	color: var(--invalid);
+	outline: none;
+}
+div.text {
+	font-size: 15px;
+	color: dimgray;
+	line-height: 24px;
+	font-weight: 400;
+	margin: 0;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+/* Upload component Style */
+.uploading-outer,
+.uploading-outer .uploadButton {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.uploading-outer {
+	width: 100%;
+	padding-bottom: 30px;
+	border-bottom: 1px solid var(--light-green);
+	margin-bottom: 30px;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.uploading-outer .uploadButton {
+	justify-content: center;
+}
+.uploadButton .uploadButton-input {
+	opacity: 0;
+	position: absolute;
+	overflow: hidden;
+	z-index: -1;
+	pointer-events: none;
+	height: 0;
+	width: 0;
+	display: none;
+}
+.uploadButton .uploadButton-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	cursor: pointer;
+	height: 120px;
+	width: 200px;
+	border-radius: 5px;
+	transition: 0.3s;
+	margin: 0;
+	color: #1b2032;
+	font-size: 16px;
+	border: 2px dashed #ced4e1;
+}
+.uploadButton > * > label > svg {
+	font-size: 20px;
+}
+.uploadButton div .uploadButton-file-name {
+	padding: 0 10px 0 18px;
+	min-height: 36px;
+	top: 1px;
+	position: relative;
+	color: #9fa9b8;
+	background-color: transparent;
+	overflow: hidden;
+	line-height: 22px;
+}
+.uploading-outer .text {
+	margin-top: 20px;
+}
+
+/* Inputs Style */
+.input-container {
+	margin-bottom: 30px;
+}
+.text-area_control {
+	display: block;
+	width: 100%;
+	padding: 30px;
+	font-family: inherit;
+	font-weight: 400;
+	color: var(--dark-green);
+	background-color: var(--light-green);
+	border: 1px solid #f0f5f7;
+	border-radius: 8px;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	line-height: 1.5;
+	outline: none;
+	margin-top: 10px;
+}
+
+/* INPUT SELECT */
+.select__control {
+	--bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+	font-family: inherit;
+	font-weight: 400;
+	background-image: var(--bs-form-select-bg-img),
+		var(--bs-form-select-bg-icon, none);
+	background-repeat: no-repeat;
+	background-position: right 0.75rem center;
+	background-size: 16px 12px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.select__control.invalid {
+	border-style: solid;
+	border-color: red;
+	border-width: 1px;
+}
+
+/* ImageBrowser */
+.img-size {
+	max-width: 330px;
+	max-height: 300px;
+	min-width: 200px;
+	min-height: 120px;
+	border: 0.3px dashed #ecf0f8;
+}
+.img-size:hover {
+	border: 1px dashed #cad1e0;
+}
+.clickable {
+	cursor: pointer;
+}
+
+/* BUTTON */
+.btn {
+	position: relative;
+	font-size: 14px;
+	line-height: 25px;
+	padding: 10px 30px;
+	border-radius: 8px;
+	color: var(--white);
+	background: var(--dark-green);
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.3s;
+}
+.btn-primary:hover {
+	background-color: #8ec9ca;
+	color: var(--dark-green);
+	font-weight: 500;
+	box-shadow: -2px -2px 5px 0px #3a3939bf;
+}
+.btn-primary {
+	background: var(--dark-green);
+	min-width: 160px;
+}
+.btn-disabled {
+	background-color: var(--lightgrey);
+}
+
+/* ALERTAS */
+.alert {
+	display: none;
+}
+.alert-success {
+	display: block;
+	color: #fff;
+	background-color: var(--valid);
+	border: #fff solid 3px;
+	border-radius: 8px;
+	/* width: 50%; */
+	margin: 15px;
+	padding: 8px;
+}
+.alert-danger {
+	display: block;
+	color: #fff;
+	background-color: var(--invalid);
+	border: #fff solid 3px;
+	border-radius: 5px;
+	/*width: 50%;*/
+	margin-left: 15px;
+	padding: 10px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.company-sidebar {
+		display: none;
+	}
+	.dash-title > h3 {
+		font-size: 30px;
+	}
+	.dash-title > p {
+		font-size: 15px;
+	}
+	.uploading-outer .text {
+		margin-top: 0px;
+	}
+	.uploading-outer {
+		display: flex;
+		position: relative;
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+	.dashboard {
+		padding: 40px 30px 0px;
+	}
+	.col-md-12 {
+		flex: 0 0 auto;
+		width: 100%;
+	}
+	.container-title {
+		padding: 20px 30px 30px;
+		min-height: 60px;
+	}
+	.container-content {
+		padding: 0 30px 10px;
+	}
+	.btn-primary {
+		min-width: 160px;
+		padding: 18px 35px 15px;
+		font-size: 15px;
+		font-family: inherit;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.col-lg-6 {
+		flex: 0 0 auto;
+		width: 50%;
+	}
+	.container-title {
+		padding: 20px 30px 30px;
+		min-height: 60px;
+	}
+	.container-content {
+		padding: 0 30px 10px;
+	}
+	#root > div > section > div.mb-4.ms-0.show-1023 {
+		display: none;
+	}
+	.btn {
+		min-width: 160px;
+		padding: 18px 35px 15px;
+		font-size: 15px;
+		font-family: inherit;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* Extra extra large devices (extra large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

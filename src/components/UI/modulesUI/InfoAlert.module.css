@@ -1,0 +1,23 @@
+.alert {
+  border-radius: 0.3rem;
+  padding: 0.25rem .5rem;
+  width: 100%;
+  margin: 1rem auto;
+  display: block;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.alert-red {
+  background-color: var(--invalid);
+}
+
+.alert-green {
+  background-color: var(--valid);
+}
+
+.offscreen{
+    position: absolute;
+    left: -9999px;
+}

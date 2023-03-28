@@ -1,0 +1,104 @@
+.md-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  max-width: 580px;
+  min-width: 320px;
+  height: 90%;
+  z-index: 2000;
+  visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateX(-50%) translateY(-50%);
+  color: var(--darkgrey);
+}
+
+.md-show {
+  visibility: visible;
+}
+
+.md-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s;
+}
+
+/* Enable overlay visibility */
+.md-show ~ .md-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.md-show.md-effect ~ .md-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.md-effect .md-content {
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.md-show.md-effect .md-content {
+  transform: translateY(3%);
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+/* Content styles */
+.md-content {
+  position: relative;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  background-color: var(--light-green);
+  padding: 2rem;
+  font-weight: bold;
+ }
+
+.md-content .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #564c4c52;
+}
+
+.md-content .close:hover {
+  color: var(--lightgrey)
+}
+
+
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) {  } 
+/*Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+  .md-content{
+    padding: 2.5rem
+    
+  }
+  .md-content .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    
+  }
+  
+}
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }

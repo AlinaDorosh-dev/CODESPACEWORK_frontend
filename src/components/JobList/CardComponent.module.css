@@ -1,0 +1,150 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: default;
+}
+.job-card {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.inner-box {
+    position: relative;
+    padding: 47px 45px 37px;
+    background: #fff;
+    border: 1px solid #ecedf2;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.inner-box:hover {
+    box-shadow: 0 0 0.5em 0.1em var(--green);
+}
+.job-other-info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+}
+.job-other-info li {
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    width: auto;
+    display: inline-block;
+    border-radius: 0;
+    border-radius: 0 30px 30px 0;
+    font-size: 13px;
+}
+
+.job-other-info .jobType {
+    font-weight: bold;
+    background-color: var(--light-green);
+    color: var(--green);
+}
+.job-other-info .position {
+    font-weight: bold;
+    background-color: var(--green);
+    color: var(--light-green);
+}
+.company-logo {
+    position: relative;
+    display: block;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto 12px;
+    transition: all 0.3s ease;
+}
+.company-logo img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.company-name {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--dark-green);
+    margin-bottom: 6px;
+}
+.job-title {
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    color: #202124;
+    margin-bottom: 8px;
+}
+.job-title a {
+    text-decoration: none;
+    color: #202124;
+    transition: all 0.3s ease;
+}
+.job-title a:hover {
+    color: var(--green);
+}
+.location {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 22px;
+    color: dimgray;
+    font-weight: 400;
+    padding-left: 25px;
+}
+.icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    line-height: 22px;
+    color: dimgray;
+}
+
+/* Small devices (landscape phones, 576px and up)   */
+@media (min-width: 576px) {
+    /* here your code   */
+}
+
+/* Medium devices (tablets, 768px and up)   */
+@media (min-width: 768px) {
+    .job-card {
+        width: 50%;
+        padding: 12px;
+        margin-bottom: 0px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)   */
+@media (min-width: 992px) {
+    .job-card {
+        width: 33.3333333333%;
+        padding: 12px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up)   */
+@media (min-width: 1200px) {
+    .job-card {
+        flex: 0 0 auto;
+        width: 25%;
+        padding: 12px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)   */
+@media (min-width: 1400px) {
+    /* here your code  */
+}

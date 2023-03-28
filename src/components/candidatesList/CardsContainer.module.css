@@ -1,0 +1,25 @@
+/*Card Container CSS*/
+
+.card-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  background-color: var(--light-green);
+  padding: 50px 2em 0;
+}
+
+@media screen and (min-width: 820px) {
+  .card-container {
+    padding: 50px 4em 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-container {
+    padding: 50px 5em 0;
+  }
+} 

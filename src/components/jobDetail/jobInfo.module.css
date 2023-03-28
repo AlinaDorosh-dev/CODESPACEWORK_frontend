@@ -1,0 +1,147 @@
+div.job-block {
+    position: relative;
+    /* padding: 0 1rem; */
+}
+div.job-block > div.inner-box {
+    position: relative;
+}
+div.job-block div.content {
+    position: relative;
+    gap: 1.3rem;
+}
+
+div.content span.job-logo > img {
+    max-width: 100px;
+    display: block;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 1.6em;
+    border-radius: 1.2em;
+    border-radius: 50%;
+}
+
+div.content h3.job-title {
+    position: relative;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.3em;
+    color: #202124;
+    top: -3px;
+    margin-bottom: 10px;
+}
+div.content ul.job-info {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.6rem;
+}
+div.content ul.job-info > li {
+    padding-bottom: 0.4rem;
+    margin-right: 1rem;
+}
+div.content ul.job-info > li > span {
+    color: grey;
+    opacity: 0.8;
+}
+
+div.content ul.job-info > li > span > * {
+    padding-right: 0.4rem;
+    font-size: 14px;
+}
+
+.job-block-seven .btn-box .theme-btn {
+    min-width: 220px;
+}
+
+.btn-style {
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    background-color: var(--dark-green);
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 1em 2em 1em;
+    margin: 2em 0em;
+}
+.theme-btn {
+    position: relative;
+    display: inline-flex;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content div.btn-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.btn-style {
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.btn-style:hover {
+    background-color: var(--green);
+    color: #fff;
+}
+
+.md-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.md-content-container h3,
+.md-content-container p {
+    margin-bottom: 30px;
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    div.job-block div.content {
+        display: flex;
+        justify-content: space-between;
+    }
+    div.content span.job-logo > img {
+        max-width: 100px;
+    }
+    div.content ul.job-info > li {
+        margin-top: 0.6em;
+    }
+    .btn-style {
+        padding: 1.2em 3.6em 1.2em;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    div.job-block {
+        width: 100%;
+    }
+    div.job-block div.inner-box {
+        display: flex;
+        justify-content: space-between;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    div.content {
+        display: flex;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* Extra extra large devices (extra large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

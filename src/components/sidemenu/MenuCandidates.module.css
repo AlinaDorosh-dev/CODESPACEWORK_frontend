@@ -1,0 +1,16 @@
+@media (max-width: 821px) {
+    .prueba {
+      width: 60%;
+      position: absolute;
+      z-index: 300;
+    }
+  }
+  
+  @media (min-width: 992px) {
+      .prueba {
+        width: 60%;
+        position: absolute;
+        z-index: 300;
+      }
+    }
+    
